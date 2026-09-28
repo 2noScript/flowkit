@@ -44,11 +44,27 @@ Standalone system to generate AI videos via Google Flow. Uses a Chrome extension
 
 All outputs below were generated end-to-end by this system — from story concept to final YouTube-ready video with thumbnails, narration, and branding.
 
+### Full Video Demos
+
+<p align="center">
+  <a href="https://youtu.be/DNroTtRKyUM">
+    <img src="https://img.youtube.com/vi/DNroTtRKyUM/maxresdefault.jpg" width="400" alt="F-15E Pilot Rescue — 36 Hours Evading Behind Enemy Lines" />
+  </a>
+  <a href="https://youtu.be/KhCj_zjbSps">
+    <img src="https://img.youtube.com/vi/KhCj_zjbSps/maxresdefault.jpg" width="400" alt="Hormuz Strait — US Navy vs 6 Iranian Attack Boats" />
+  </a>
+</p>
+<p align="center">
+  <a href="https://youtu.be/DNroTtRKyUM">▶️ <b>Watch: F-15E Pilot Rescue (36 Hours Evading)</b></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://youtu.be/KhCj_zjbSps">▶️ <b>Watch: Hormuz Strait (US Navy vs 6 Attack Boats)</b></a>
+</p>
+
 ### Generated YouTube Thumbnails
 
 <p align="center">
-  <img src="docs/images/thumbnail_hormuz.jpg" width="400" alt="Hormuz Strait naval blockade thumbnail" />
-  <img src="docs/images/thumbnail_f15e_rescue.jpg" width="400" alt="F-15E pilot rescue thumbnail" />
+  <a href="https://youtu.be/KhCj_zjbSps"><img src="docs/images/thumbnail_hormuz.jpg" width="400" alt="Hormuz Strait naval blockade thumbnail" /></a>
+  <a href="https://youtu.be/DNroTtRKyUM"><img src="docs/images/thumbnail_f15e_rescue.jpg" width="400" alt="F-15E pilot rescue thumbnail" /></a>
 </p>
 <p align="center">
   <img src="docs/images/thumbnail_operation_resolve.jpg" width="400" alt="Operation Absolute Resolve thumbnail" />
@@ -96,7 +112,7 @@ The reference image system keeps characters consistent across an entire video. E
   <img src="docs/images/scene_f15e_survival.jpg" width="260" alt="Scene 20: Pilot surviving in mountains" />
 </p>
 
-<sub>Strategic briefing → pilot departure → formation flight → aircraft hit → CSAR alert → pilot survival.</sub>
+<sub>Strategic briefing → pilot departure → formation flight → aircraft hit → CSAR alert → pilot survival. • <a href="https://youtu.be/DNroTtRKyUM">Watch full video on YouTube ▶</a></sub>
 
 ### Hormuz Strait — Naval Scenes
 
@@ -108,6 +124,8 @@ The reference image system keeps characters consistent across an entire video. E
   <img src="docs/images/scene_hormuz_ciws.jpg" width="400" alt="CIWS engagement at sea" />
   <img src="docs/images/scene_hormuz_sunset.jpg" width="400" alt="Warship sailing into sunset" />
 </p>
+
+<sub>Iranian patrol boats → bridge alert → CIWS engagement → sunset patrol. • <a href="https://youtu.be/KhCj_zjbSps">Watch full video on YouTube ▶</a></sub>
 
 ### What the Pipeline Produces
 
