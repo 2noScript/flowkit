@@ -48,10 +48,10 @@ All outputs below were generated end-to-end by this system — from story concep
 
 <p align="center">
   <a href="https://youtu.be/DNroTtRKyUM">
-    <img src="https://img.youtube.com/vi/DNroTtRKyUM/maxresdefault.jpg" width="400" alt="F-15E Pilot Rescue — 36 Hours Evading Behind Enemy Lines" />
+    <img src="docs/images/thumbnail_f15e_rescue_play.jpg" width="400" alt="F-15E Pilot Rescue — 36 Hours Evading Behind Enemy Lines" />
   </a>
   <a href="https://youtu.be/KhCj_zjbSps">
-    <img src="https://img.youtube.com/vi/KhCj_zjbSps/maxresdefault.jpg" width="400" alt="Hormuz Strait — US Navy vs 6 Iranian Attack Boats" />
+    <img src="docs/images/thumbnail_hormuz_play.jpg" width="400" alt="Hormuz Strait — US Navy vs 6 Iranian Attack Boats" />
   </a>
 </p>
 <p align="center">
