@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/flowkit_banner.svg" width="720" alt="FLOW KIT" />
+  <img src="docs/agents/row.svg" height="72" alt="Muse, Claude Code, Codex, Antigravity" />
 </p>
 
 <p align="center">
