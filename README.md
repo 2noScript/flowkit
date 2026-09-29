@@ -42,6 +42,16 @@ Standalone system to generate AI videos via Google Flow. Uses a Chrome extension
 
 ## AI Agent Support
 
+<p align="center">
+  <img src="docs/agents/muse.svg" height="56" alt="Muse" title="Muse" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/agents/claude.svg" height="56" alt="Claude Code" title="Claude Code" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/agents/codex.svg" height="56" alt="Codex" title="Codex" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/agents/agy.svg" height="56" alt="Antigravity" title="Antigravity (agy)" />
+</p>
+
 FlowKit's 36 skills (`skills/fk-*.md`) are plain Markdown recipes any AI coding
 agent can read and follow. Review providers are swappable at runtime
 (`agent/providers.json`, or `/fk-change-provider`) — no restart needed.
@@ -52,16 +62,6 @@ agent can read and follow. Review providers are swappable at runtime
 | **Claude Code** | Auto-loaded via `CLAUDE.md`, native `/fk-*` slash commands | `claude` — default `video_review` role |
 | **Codex CLI** | Reads `skills/fk-<name>.md` via `AGENTS.md`; vision on contact sheets for self-review | `codex` — OpenAI Codex CLI, or `muse` (= the agent itself) for hand scoring |
 | **agy** (Google Antigravity) | Reads skill files manually; vision on contact sheets for self-review | `agy` — Antigravity CLI, or `muse` (= the agent itself) for hand scoring |
-
-<p align="center">
-  <img src="docs/agents/muse.svg" height="56" alt="Muse" title="Muse" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/agents/claude.svg" height="56" alt="Claude Code" title="Claude Code" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/agents/codex.svg" height="56" alt="Codex" title="Codex" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/agents/agy.svg" height="56" alt="Antigravity" title="Antigravity (agy)" />
-</p>
 
 ## Showcase
 
