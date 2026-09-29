@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="docs/agents/row.svg" height="72" alt="Muse, Claude Code, Codex, Antigravity" />
-</p>
-
-<p align="center">
   <a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/></a>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" alt="Python 3.10+"/>
   <img src="https://img.shields.io/badge/Chrome-MV3-4285F4?logo=googlechrome&logoColor=white" alt="Chrome MV3"/>
@@ -43,13 +39,13 @@ Standalone system to generate AI videos via Google Flow. Uses a Chrome extension
 ## AI Agent Support
 
 <p align="center">
-  <img src="docs/agents/muse.svg" height="56" alt="Muse" title="Muse" />
+  <img src="docs/agents/v2/muse.svg" height="56" alt="Muse" title="Muse" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/agents/claude.svg" height="56" alt="Claude Code" title="Claude Code" />
+  <img src="docs/agents/v2/claude.svg" height="56" alt="Claude Code" title="Claude Code" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/agents/codex.svg" height="56" alt="Codex" title="Codex" />
+  <img src="docs/agents/v2/codex.svg" height="56" alt="Codex" title="Codex" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="docs/agents/agy.svg" height="56" alt="Antigravity" title="Antigravity (agy)" />
+  <img src="docs/agents/v2/agy.svg" height="56" alt="Antigravity" title="Antigravity (agy)" />
 </p>
 
 FlowKit's 36 skills (`skills/fk-*.md`) are plain Markdown recipes any AI coding
