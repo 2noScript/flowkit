@@ -53,6 +53,16 @@ agent can read and follow. Review providers are swappable at runtime
 | **Codex CLI** | Reads `skills/fk-<name>.md` via `AGENTS.md`; vision on contact sheets for self-review | `codex` — OpenAI Codex CLI, or `muse` (= the agent itself) for hand scoring |
 | **agy** (Google Antigravity) | Reads skill files manually; vision on contact sheets for self-review | `agy` — Antigravity CLI, or `muse` (= the agent itself) for hand scoring |
 
+<p align="center">
+  <img src="docs/agents/muse.svg" height="56" alt="Muse" title="Muse" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/agents/claude.svg" height="56" alt="Claude Code" title="Claude Code" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/agents/codex.svg" height="56" alt="Codex" title="Codex" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="docs/agents/agy.svg" height="56" alt="Antigravity" title="Antigravity (agy)" />
+</p>
+
 ## Showcase
 
 All outputs below were generated end-to-end by this system — from story concept to final YouTube-ready video with thumbnails, narration, and branding.
