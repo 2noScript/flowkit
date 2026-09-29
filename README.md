@@ -40,6 +40,19 @@
 
 Standalone system to generate AI videos via Google Flow. Uses a Chrome extension as a browser bridge: it mints reCAPTCHA and runs Flow's batchexecute RPCs inside a signed-in `flow.google.com` tab, which is the only place they can be signed.
 
+## AI Agent Support
+
+FlowKit's 36 skills (`skills/fk-*.md`) are plain Markdown recipes any AI coding
+agent can read and follow. Review providers are swappable at runtime
+(`agent/providers.json`, or `/fk-change-provider`) — no restart needed.
+
+| Agent | Skills | Video review provider |
+|-------|--------|----------------------|
+| **Muse** | Native — reads `skills/fk-*.md` directly, vision on files and contact sheets (`muse.read`) | `muse` — official opt-in provider: no CLI, no model, no API key; scores sheets by hand via `review-sheets` → `review-submit` |
+| **Claude Code** | Auto-loaded via `CLAUDE.md`, native `/fk-*` slash commands | `claude` — default `video_review` role |
+| **Codex CLI** | Reads `skills/fk-<name>.md` via `AGENTS.md` | `codex` — OpenAI Codex CLI |
+| **agy** (Google Antigravity) | Reads skill files manually | `agy` — Antigravity CLI |
+
 ## Showcase
 
 All outputs below were generated end-to-end by this system — from story concept to final YouTube-ready video with thumbnails, narration, and branding.
