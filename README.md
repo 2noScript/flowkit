@@ -270,6 +270,14 @@ You can also pass `flow_project_id` per project on `POST /api/projects`.
 | `MEDIA_PROVIDER` | `flow` | `flow` (Google Flow via extension) or `assistant` (route all generation to the AI assistant). |
 | `ASSISTANT_PROVIDER_TIMEOUT_S` | `1800` | How long a request waits for a worker to complete its provider job before failing. |
 | `ASSISTANT_PROVIDER_POLL_S` | `15` | How often to poll the provider-job row while waiting for completion. |
+| `MUSE2API_URL` | — | Base URL of a [muse2api](https://github.com/crisng95/muse2api) gateway. Setting it makes the `muse2api` provider available. |
+| `MUSE2API_KEY` | — | The gateway's `MUSE2API_API_KEY` (sent as `Authorization: Bearer`). |
+| `MUSE2API_IMAGE_MODEL` / `MUSE2API_VIDEO_MODEL` | `muse-image` / `muse-video` | Model ids sent to the gateway. |
+| `MUSE2API_VIDEO_SECONDS` | `8` | Clip length requested for i2v. |
+| `MUSE2API_TIMEOUT_S` | `1800` | Max wait for one image call or video task (covers the gateway's own account failover). |
+| `MUSE2API_POLL_S` | `5` | Video task poll interval. |
+| `MUSE2API_MAX_CONCURRENT` / `MUSE2API_COOLDOWN_S` | `2` / `0` | Worker throttling for this provider. |
+| `MUSE2API_ALLOW_DEGRADED` | `0` | `1` renders chained scenes and r2v as plain i2v (muse.ai takes a first frame only). |
 
 ### Assistant Media Provider (`MEDIA_PROVIDER=assistant`)
 
@@ -298,6 +306,25 @@ Protocol (persistent provider-job queue + HTTP API):
 See `agent/worker/assistant_worker.py` for a reference worker implementing the
 worker side of the protocol. Video upscale is not supported on this provider and
 fails loudly.
+
+### Muse Media Provider (`provider: muse2api`)
+
+Renders through a [muse2api](https://github.com/crisng95/muse2api) gateway, which
+exposes the muse.ai web app as an OpenAI-compatible API:
+
+```
+Flow Kit worker ──> Muse2APIProvider ──HTTP──> muse2api ──> muse.ai
+```
+
+The gateway owns the muse.ai accounts, pooling and failover; Flow Kit calls
+`POST /v1/images/generations` for images and `POST /v1/videos` +
+`GET /v1/videos/{id}` for i2v, sends input frames inline as data URLs (so the
+gateway may run on another host), and downloads every result into
+`output/_shared/muse2api/` as a `file://` URL with a minted UUID `media_id`. Set
+`MUSE2API_URL` and `MUSE2API_KEY`, then pass `"provider": "muse2api"` per request
+or set `DEFAULT_PROVIDER=muse2api`. Supports image and i2v; no edit, upscale or
+TTS, and no end frame or r2v unless `MUSE2API_ALLOW_DEGRADED=1`. Troubleshooting
+lives in `/fk-provider`.
 
 ### Post-production (provider-neutral)
 
